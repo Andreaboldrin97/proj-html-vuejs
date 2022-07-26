@@ -1,11 +1,11 @@
 <template>
-  <section>
+  <main>
       <section class="info">
             <infoCourse/>
             <statiscCard/>
             <professionalSection/>
       </section>
-  </section>
+  </main>
 </template>
 
 <script>
