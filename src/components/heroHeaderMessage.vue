@@ -18,15 +18,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
 .text-focus{
     font-size: 45px;
 }
 .text_info{
     font-size: 13px;
-    color: #bcbcbc;
+    color: $colorTextFocus;
 }
 .btn_focus{
-    background-color: #1fad96;
+    background-color: $colorBreand;
 }
 
 </style>

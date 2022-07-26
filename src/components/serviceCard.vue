@@ -30,13 +30,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
 .text-focus{
     font-weight: 200;
 }
 .service-clients{
     font-size: 35px;
     .service-text{
-        color:#1fad96;
+        color: $colorBreand;
         font-weight: 200;
     }
 }
@@ -44,10 +45,10 @@ export default {
     font-size: 12px;
     font-weight: 300;
     i{
-        color: #1fad96;
+        color: $colorBreand;
     }
 }
 .btn_focus{
-    background-color: #1fad96;
+    background-color: $colorBreand;
 }
 </style>

@@ -36,8 +36,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
 .hero-header{
-    background-color: #1f2154;
+    background-color: $bgHeader;
 }
 
 </style>
