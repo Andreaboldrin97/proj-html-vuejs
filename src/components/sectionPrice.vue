@@ -18,7 +18,7 @@
                     :students="element.students"/>
       </div>
       <div class="text-center">
-          <btnForm class="pt-4 "
+          <btnForm class="pt-5"
             :btnFocus ="btnText.btnFocus"
             :btnLink="btnText.btnLink"
             />
