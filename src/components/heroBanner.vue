@@ -48,7 +48,7 @@ img{
         }
 }
 .hero-right{
-    top: 114px;
+    top: 95px;
 }
 
 </style>
