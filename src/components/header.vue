@@ -6,6 +6,12 @@
                 :textInfo ="element.textInfo "
                 :btnFocus="element.btnFocus"
                 :btnLink="element.btnLink"/>
+      <div class="text-center">
+          <btnForm class=""
+            :btnFocus ="btnText.btnFocus"
+            :btnLink="btnText.btnLink"
+            />
+      </div>
     <heroBanner/>
   </header>
 </template>
@@ -14,20 +20,26 @@
 import headerNav from './headerNav.vue' 
 import heroHeaderMessage from './heroHeaderMessage.vue' 
 import heroBanner from './heroBanner.vue' 
+import btnForm from './btnForm.vue' 
 
 export default {
      components :{
          headerNav,
         heroHeaderMessage,
-        heroBanner
+        heroBanner,
+        btnForm
     },
      data : function (){
         return{
-            focusMessage : {
+            focusMessage : [{
                 focus : 'Learn At Own Pace!',
                 textInfo : 'Get teamed up whith peoople of the same will.',
                 btnFocus :'Get started for free',
                 btnLink : '#'
+            }],
+             btnText :{
+                    btnFocus : 'Get started for free',
+                    btnLink : '#'
             }
         }
     }

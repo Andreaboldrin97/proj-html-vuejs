@@ -6,7 +6,7 @@
       <div class="pt-5 text-center fs-5">
           FANNIE MORENO
       </div>
-      <div class="pt-2 text-center interlocutor-position text-muted">
+      <div class="pt-2 text-center interlocutor-position ">
           /Founder &amp; CEO
       </div>
   </section>
@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 .fucus-container{
     width: 60%;
     margin-top: 100px;
@@ -28,5 +30,6 @@ export default {
 }
 .interlocutor-position{
     font-weight: 200;
+    color: $colorTextFocus ;
 }
 </style>
