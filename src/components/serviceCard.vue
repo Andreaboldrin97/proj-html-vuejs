@@ -9,7 +9,7 @@
         <div class="list-service py-1" v-for="(element,index) in clientsServis" :key="index">
              <i class="fa-solid fa-check pe-3"></i> {{ element }}
         </div>
-         <btnForm
+         <btnForm class="pt-4"
             :btnFocus ="btnFocus"
             :btnLink="btnLink"
             />
@@ -52,13 +52,10 @@ export default {
     }
 }
 .list-service{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
     i{
         color: $colorBreand;
     }
-}
-.btn_focus{
-    background-color: $colorBreand;
 }
 </style>
