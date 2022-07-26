@@ -1,9 +1,9 @@
 <template>
   <section>
-      <section>
+      <section class="info">
             <infoCourse/>
             <statiscCard/>
-            <professionalCard/>
+            <professionalSection/>
       </section>
   </section>
 </template>
@@ -11,18 +11,20 @@
 <script>
 import infoCourse from './infoCourse.vue' 
 import statiscCard from './statiscCard.vue' 
-import professionalCard from './professionalCard.vue' 
+import professionalSection from './professionalSection.vue' 
 
 export default {
       components :{
          infoCourse,
          statiscCard,
-         professionalCard
+         professionalSection
        
     },
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.info{
+    background-image: url('../assets/remote-training/images/background-pattern-grid-line.png');
+}
 </style>

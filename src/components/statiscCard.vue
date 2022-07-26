@@ -48,7 +48,7 @@ export default {
         color: #1fad96;
     }
     .statisc-text{
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 300;
     }
 }
