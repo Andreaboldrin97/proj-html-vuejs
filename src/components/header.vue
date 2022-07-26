@@ -1,7 +1,12 @@
 <template>
   <header class="hero-header">
     <headerNav/>
-    <heroHeaderMessage/>
+    <heroHeaderMessage v-for="(element, index) in focusMessage" :key="index"
+                :focus="element.focus"
+                :textInfo ="element.textInfo "
+                :btnFocus="element.btnFocus"
+                :btnLink="element.btnLink"/>
+    
   </header>
 </template>
 
@@ -14,7 +19,16 @@ export default {
          headerNav,
         heroHeaderMessage,
     },
-  
+     data : function (){
+        return{
+            focusMessage : [{
+                focus : 'Learn At Own Pace!',
+                textInfo : 'Get teamed up whith peoople of the same will.',
+                btnFocus :'Get started for free',
+                btnLink : '#'
+            }]
+        }
+    }
 
 }
 </script>
