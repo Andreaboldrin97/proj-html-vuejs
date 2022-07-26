@@ -6,18 +6,20 @@
                 :textInfo ="element.textInfo "
                 :btnFocus="element.btnFocus"
                 :btnLink="element.btnLink"/>
-    
+    <heroBanner/>
   </header>
 </template>
 
 <script>
 import headerNav from './headerNav.vue' 
 import heroHeaderMessage from './heroHeaderMessage.vue' 
+import heroBanner from './heroBanner.vue' 
 
 export default {
      components :{
          headerNav,
         heroHeaderMessage,
+        heroBanner
     },
      data : function (){
         return{
@@ -33,7 +35,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scooped>
+<style lang="scss" scoped>
 .hero-header{
     background-color: #1f2154;
 }

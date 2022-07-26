@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white text-center p-5">
+  <div class="container text-white text-center p-5">
       <div class="text-focus">{{ focus }}</div>
       <div class="pt-2 pb-4 text_info">{{ textInfo }}</div>
       <a :href="btnLink" class="btn btn_focus text-white px-4"> {{ btnFocus }}</a>
@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style lsng="scss" scooped>
+<style lang="scss" scoped>
 .text-focus{
     font-size: 45px;
 }
