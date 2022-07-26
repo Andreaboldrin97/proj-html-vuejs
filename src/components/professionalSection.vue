@@ -1,7 +1,7 @@
 <template>
-  <div class="container d-flex border-r mt-5">
+  <div class="container d-flex mt-5">
 
-    <div class="card-container d-flex w-50 border-r">
+    <div class="card-container d-flex w-50 ">
         <div>
           <professionalCard v-for="(element,index) in graphicProfession" :key="index"
                           :profession="element.profession"
@@ -21,37 +21,25 @@
           <professionalCard2 v-for="(element,index) in developmentProfession" :key="index"
                           :profession="element.profession"
                           :description="element.description"
-                          :img="element.img"/>/>
+                          :img="element.img"/>
         </div>
     </div>
     
     
-    <div class="w-50 border-r text-center align-self-center">
-        <div>
-          TOGHEDER WE CAN CREATE
-        </div>
-        <div>
-          Service We <span>Can Provide</span> For My Clients.
-        </div>
-        <ol>
-          <li>Select &amp; customize courses to your preferences</li>
-          <li>Chenge the tutor and make arrangements</li>
-          <li>Participate in events to join others</li>
-          <li>Get the desired certificate deòivered at house</li>
-        </ol>
-        <a :href="btnLink" class="btn btn_focus text-white px-4"> Get started for free</a>
-    </div>
+   <serviceCard/>
   </div>
 </template>
 
 <script>
 import professionalCard from './professionalCard.vue' 
 import professionalCard2 from './professionalCard2.vue' 
+import serviceCard from './serviceCard.vue' 
 
 export default {
     components :{
           professionalCard,
-          professionalCard2
+          professionalCard2,
+          serviceCard
     },
     data : function(){
       return{
@@ -91,12 +79,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.border-r {
-  border: 1px solid red;
-}
-.btn_focus{
-    background-color: #1fad96;
-}
 .second-card{
   top: 10%;
 }
