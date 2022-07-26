@@ -22,7 +22,7 @@ export default {
          infoCourse,
          statiscCard,
          professionalSection,
-       sectionPrice
+        sectionPrice
     },
 }
 </script>

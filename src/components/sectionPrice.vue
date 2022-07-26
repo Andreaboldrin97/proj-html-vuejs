@@ -17,15 +17,25 @@
                     :lessons="elementlessons"
                     :students="element.students"/>
       </div>
+      <div class="text-center">
+          <btnForm class="pt-4 "
+            :btnFocus ="btnText.btnFocus"
+            :btnLink="btnText.btnLink"
+            />
+      </div>
+      
       
   </div>
 </template>
 
 <script>
 import courseCard from './courseCard.vue' 
+import btnForm from './btnForm.vue' 
+
 export default {
           components :{
          courseCard,
+         btnForm
     },
     data : function(){
         return{
@@ -72,7 +82,12 @@ export default {
                     lessons : 14,
                     students : 76
                 }
-            ]
+            ],
+            btnText :{
+                    btnFocus : 'View all courses →',
+                    btnLink : '#'
+            }
+            
         }
     }
 }

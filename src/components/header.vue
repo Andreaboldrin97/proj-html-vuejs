@@ -23,12 +23,12 @@ export default {
     },
      data : function (){
         return{
-            focusMessage : [{
+            focusMessage : {
                 focus : 'Learn At Own Pace!',
                 textInfo : 'Get teamed up whith peoople of the same will.',
                 btnFocus :'Get started for free',
                 btnLink : '#'
-            }]
+            }
         }
     }
 

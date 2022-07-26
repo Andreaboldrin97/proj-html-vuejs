@@ -52,7 +52,6 @@ export default {
             img : 'home-6-service-image-01.png',
             isReverse : false
           }
-        
         ],
         businessProfession : [
            {
@@ -69,7 +68,6 @@ export default {
             img : 'home-6-service-image-03.png',
             isReverse : true
           },
-        
         ],
         developmentProfession : [
             {
