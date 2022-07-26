@@ -9,12 +9,20 @@
         <div class="list-service py-1" v-for="(element,index) in clientsServis" :key="index">
              <i class="fa-solid fa-check pe-3"></i> {{ element }}
         </div>
-        <a :href="btnLink" class="btn btn_focus text-white px-4 mt-3"> Get started for free</a>
+         <btnForm
+            :btnFocus ="btnFocus"
+            :btnLink="btnLink"
+            />
     </div>
 </template>
 
 <script>
+import btnForm from './btnForm.vue' 
+
 export default {
+     components :{
+        btnForm
+    },
     data : function(){
         return{
             clientsServis : [
@@ -22,7 +30,9 @@ export default {
                 'Change the tutor and make arrangements',
                 'Participate in events to join others',
                 'Get the desired certificate delivered at house'
-            ]
+            ],
+            btnFocus : 'Get started for free',
+            btnLink : '#'
         }
     }
 

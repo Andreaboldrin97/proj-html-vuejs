@@ -2,12 +2,20 @@
   <div class="container text-white text-center p-5">
       <div class="text-focus">{{ focus }}</div>
       <div class="pt-2 pb-4 text_info">{{ textInfo }}</div>
-      <a :href="btnLink" class="btn btn_focus text-white px-4"> {{ btnFocus }}</a>
+      <btnForm
+      :btnFocus ="btnFocus"
+      :btnLink="btnLink"
+      />
   </div>
 </template>
 
 <script>
+import btnForm from './btnForm.vue' 
+
 export default {
+     components :{
+        btnForm
+    },
  props :{
      focus : String,
      textInfo: String,
@@ -26,8 +34,6 @@ export default {
     font-size: 13px;
     color: $colorTextFocus;
 }
-.btn_focus{
-    background-color: $colorBreand;
-}
+
 
 </style>
