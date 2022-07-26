@@ -1,10 +1,10 @@
 <template>
   <div class="professional-card m-2 my-3">
-      <img src="../assets/remote-training/images/home-6-service-image-01.png" alt="">
+      <img :src="require(`../assets/remote-training/images/${img}`)" :alt="profession">
         <div class="p-2">
-                <div>Graphict Design</div>
+                <div>{{ profession }}</div>
                 <div class="text-description pt-1">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ea perferendis sapiente dolore blanditiis assumenda asperiores
+                    {{ description }}
                 </div>
         </div>
     </div>
@@ -12,7 +12,11 @@
 
 <script>
 export default {
-
+     props:{
+        profession : String,
+        description : String,
+        img : String
+    }
 }
 </script>
 
