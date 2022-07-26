@@ -1,5 +1,5 @@
 <template>
-  <div class="professional-card m-2 my-3 px-2">
+  <div class="professional-card m-3 my-3 px-2 d-flex flex-column justify-content-between " :class="isReverse  ? 'flex-column-reverse' : '' ">
         <div class="p-2">
                 <div>{{ profession }}</div>
                 <div class="text-description pt-1">
@@ -15,7 +15,8 @@ export default {
     props:{
         profession : String,
         description : String,
-        img : String
+        img : String,
+        isReverse : Boolean
     }
 }
 </script>
@@ -25,6 +26,7 @@ export default {
 
 .professional-card{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 450px;
   img{
     width: 100%;
   }
