@@ -1,12 +1,20 @@
 <template>
   <section>
-      main
+      <infoCourse/>
+      <statiscCard/>
   </section>
 </template>
 
 <script>
-export default {
+import infoCourse from './infoCourse.vue' 
+import statiscCard from './statiscCard.vue' 
 
+export default {
+      components :{
+         infoCourse,
+         statiscCard,
+       
+    },
 }
 </script>
 
