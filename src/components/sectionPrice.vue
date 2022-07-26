@@ -8,7 +8,16 @@
               Latest Featured <span class="service-text">Course</span>
           </div>
       </div>
-      <courseCard/>
+
+      <div class="d-flex flex-wrap container-card">
+          <courseCard v-for="(element,index) in courses" :key="index"
+                    :imgCourse="element.imgCourse"
+                    :price="element.price"
+                    :courseContent="element.courseContent"
+                    :lessons="elementlessons"
+                    :students="element.students"/>
+      </div>
+      
   </div>
 </template>
 
@@ -17,13 +26,64 @@ import courseCard from './courseCard.vue'
 export default {
           components :{
          courseCard,
-      
     },
+    data : function(){
+        return{
+            courses : [
+                {
+                    imgCourse : 'course-02-480x298.jpg',
+                    price : '$40',
+                    courseContent : 'Learning to write as a Professional Author',
+                    lessons : 20,
+                    students : 50
+                },
+                {
+                    imgCourse : 'stock-full-hd-03-480x298.jpg',
+                    price : 'Free',
+                    courseContent : 'Costumer-centric Info-Tech Strategies',
+                    lessons : 24,
+                    students : 769
+                },
+                {
+                    imgCourse : 'stock-full-hd-04-480x298.jpg',
+                    price : '$19',
+                    courseContent : 'Open Programmng Courses for Everyone: Python',
+                    lessons : 17,
+                    students : 62
+                },
+                {
+                    imgCourse : 'stock-full-hd-06-480x298.jpg',
+                    price : '$26',
+                    courseContent : 'Academic Listening Note-taking',
+                    lessons : 14,
+                    students : 67
+                },
+                {
+                    imgCourse : 'course-featured-image-01-480x298.jpg',
+                    price : '$39',
+                    courseContent : 'Master jQuery in a Short Period of Time',
+                    lessons : 6,
+                    students : 51
+                },
+                {
+                    imgCourse : 'stock-full-hd-05-480x298.jpg',
+                    price : '$59',
+                    courseContent : 'Introduction to Javascript for Begginners',
+                    lessons : 14,
+                    students : 76
+                }
+            ]
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
+.container-card{
+    width: 80%;
+    margin: 0 auto;
+}
 .text-focus{
     font-weight: 200;
 }
