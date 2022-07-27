@@ -56,6 +56,19 @@ export default {
 @import "../style/variables.scss";
 .hero-header{
     background-color: $bgHeader;
+    position: relative;
+    z-index: 1;
+    &::before{
+      content: "";
+       opacity: 0.3;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url(../assets/remote-training/images/waves.svg);
+      position: absolute;
+      z-index: -1;
+    }
 }
 
 </style>

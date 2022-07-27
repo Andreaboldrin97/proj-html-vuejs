@@ -21,10 +21,12 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 .text-focus{
-    font-size: 45px;
+    font-size: 55px;
+    font-weight: 500;
 }
 .text_info{
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: 500;
     color: $colorTextFocus;
 }
 
