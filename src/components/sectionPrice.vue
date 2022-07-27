@@ -14,7 +14,7 @@
                     :imgCourse="element.imgCourse"
                     :price="element.price"
                     :courseContent="element.courseContent"
-                    :lessons="elementlessons"
+                    :lessons="element.lessons"
                     :students="element.students"/>
       </div>
       <div class="text-center">

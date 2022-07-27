@@ -5,12 +5,19 @@
             <statiscCard/>
             <professionalSection/>
       </section>
+
       <section class="price">
           <sectionPrice/>
       </section>
+
       <section>
           <testimony/>
       </section>
+      
+      <section class="blog">
+          <sectionBlog/>
+      </section>
+
   </main>
 </template>
 
@@ -20,6 +27,7 @@ import statiscCard from './statiscCard.vue'
 import professionalSection from './professionalSection.vue' 
 import sectionPrice from './sectionPrice.vue' 
 import testimony from './testimony.vue' 
+import sectionBlog from './sectionBlog.vue' 
 
 export default {
       components :{
@@ -27,7 +35,8 @@ export default {
          statiscCard,
          professionalSection,
          sectionPrice,
-         testimony
+         testimony,
+         sectionBlog
     },
 }
 </script>
@@ -39,6 +48,10 @@ export default {
 }
 .price {
     margin-top: 150px ;
+    background-color: $bgSectionPrice;
+}
+.blog{
+    margin-top: 70px ;
     background-color: $bgSectionPrice;
 }
 </style>

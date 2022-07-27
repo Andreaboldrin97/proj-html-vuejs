@@ -5,7 +5,7 @@
               <span class="brand-name">MaxCoach</span>
               ?
         </div>
-        
+
         <profileTestimony/>
 
         <div class="d-flex justify-content-evenly container-company">
@@ -71,6 +71,6 @@ export default {
     }
 }
 .container-company{
-    margin-top: 100px;
+    margin-top: 70px;
 }
 </style>
