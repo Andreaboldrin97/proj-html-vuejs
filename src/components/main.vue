@@ -1,12 +1,12 @@
 <template>
   <main>
-      <section class="info">
+      <section class="info" id="success">
             <infoCourse/>
             <statiscCard/>
             <professionalSection/>
       </section>
 
-      <section class="price">
+      <section class="price" id="courses">
           <sectionPrice/>
       </section>
 
@@ -14,7 +14,7 @@
           <testimony/>
       </section>
       
-      <section class="blog">
+      <section class="blog" id="blog">
           <sectionBlog/>
       </section>
 

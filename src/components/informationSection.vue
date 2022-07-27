@@ -51,7 +51,7 @@ export default {
                 },
                 {
                     item : 'Blog',
-                    itemUrl : '#'
+                    itemUrl : '#blog'
                 },
                 {
                     item : 'About us',
@@ -61,11 +61,11 @@ export default {
             sections :[
                  {
                     item : 'Success strory',
-                    itemUrl : '#'
+                    itemUrl : '#success'
                 },
                 {
                     item : 'Courses',
-                    itemUrl : '#'
+                    itemUrl : '#courses'
                 },
                 {
                     item : 'Contact us',
