@@ -10,7 +10,10 @@
             </div>
         </div>
         <div class="d-flex">
-            <pleasantriesCard/>
+            <pleasantriesCard v-for="(element , index) in serviceCoursesHelp " :key="index"
+                                :icon="element.icon"
+                                :title="element.title"
+                                :content="element.content"/>
         </div>
     </div>
 </template>
@@ -23,6 +26,32 @@ export default {
       components :{
          pleasantriesCard,
     },
+    data : function(){
+        return{
+            serviceCoursesHelp : [
+                {
+                    icon : 'fa-brands fa-font-awesome',
+                    title : 'Idea Discussion',
+                    content : 'Get teamed up with the specialists who work and teach coding foe years at famous universities.'
+                },
+                {
+                    icon : 'fa-solid fa-gear',
+                    title : 'Web Development',
+                    content : 'Lear to strat building a webpage from scratch. You decide your own pace, course and speed.'
+                },
+                {
+                    icon : 'fa-solid fa-circle-nodes',
+                    title : 'System Administration',
+                    content : 'Learners are encouraged to study the mechanism and structure of system administartion.'
+                },
+                {
+                    icon : 'fa-solid fa-display',
+                    title : 'Graphic Design',
+                    content : 'Have a passion for graphics and arts? Show talents with confidence and self-assertiveness.'
+                },
+            ]
+        }
+    }
 }
 </script>
 
