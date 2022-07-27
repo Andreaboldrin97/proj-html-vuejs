@@ -15,7 +15,7 @@
             <div class="search-bar">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" v-model.trim="searchInput">
-                    <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="input-group-text icon-container"><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
             </div>
       </nav>
@@ -58,6 +58,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 .logo-img{
     width: 20%;
     img{
@@ -76,5 +78,12 @@ export default {
 }
 .search-bar{
     width: 20%;
+    .icon-container{
+        background-color: white;
+    }
+    i{
+        color: $colorBreand;
+        
+    }
 }
 </style>
