@@ -6,8 +6,7 @@
     <heroHeaderMessage id="header" v-for="(element, index) in focusMessage" :key="index"
                 :focus="element.focus"
                 :textInfo ="element.textInfo "
-                :btnFocus="element.btnFocus"
-                :btnLink="element.btnLink"/>
+               />
 
       <div class="text-center">
           <btnForm class=""
@@ -39,8 +38,6 @@ export default {
             focusMessage : [{
                 focus : 'Learn At Own Pace!',
                 textInfo : 'Get teamed up whith peoople of the same will.',
-                btnFocus :'Get started for free',
-                btnLink : '#'
             }],
              btnText :{
                     btnFocus : 'Get started for free',
