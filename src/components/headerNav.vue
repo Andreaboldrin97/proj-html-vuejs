@@ -7,8 +7,14 @@
                 <div class="nav-links" v-for="(element , index) in linksNav" :key="index">
                    <a :href="linkUrl"> {{ element.linkName }} <span><i class="fa-solid fa-chevron-down"></i></span></a>
                 </div>
-                <div class="d-flex icon-user">
-                    <i class="fa-solid fa-cart-shopping pe-3"></i>
+                <div class="d-flex icon-user align-items-center">
+                    <div class="position-relative pe-3">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="shopping-items position-absolute">
+                            <span class="number-shop-list position-absolute">0</span>
+                        </span>
+                    </div>
+                    
                     <i class="fa-regular fa-circle-user"></i>
                 </div>
             </div>
@@ -86,4 +92,23 @@ export default {
         
     }
 }
+.icon-user{
+    font-size: 20px;
+
+    .shopping-items{
+    width: 15px;
+    height: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    top: -5%;
+    left : 40%;
+    }
+    .number-shop-list{
+        font-size: 12px;
+        top: -10%;
+        left: 22%;
+    }
+}
+
 </style>
