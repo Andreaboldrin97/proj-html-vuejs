@@ -3,7 +3,7 @@
   <header class="hero-header">
     <headerNav/>
 
-    <heroHeaderMessage v-for="(element, index) in focusMessage" :key="index"
+    <heroHeaderMessage id="header" v-for="(element, index) in focusMessage" :key="index"
                 :focus="element.focus"
                 :textInfo ="element.textInfo "
                 :btnFocus="element.btnFocus"

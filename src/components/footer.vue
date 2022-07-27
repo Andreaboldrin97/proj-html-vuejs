@@ -1,5 +1,5 @@
 <template>
-  <footer >
+  <footer class="position-relative">
     <div class="container"> 
       <div class="d-flex pt-5 ps-5">
           <div class="w-50">
@@ -24,13 +24,17 @@
                               :socialIcon="element.socialIcon"
                               :socialLink="element.socialLink"/>
             </div>
-            
           </div>
-          
+
           <div class="w-50">
             <informationSection/>
           </div>
       </div>
+
+      <div class="circle-link d-flex justify-content-center align-items-center position-absolute">
+          <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+
       <div class="text-center py-5 copyright-text">
         © 2020 Maxcoach. All Rights Reserved
       </div>
@@ -93,5 +97,18 @@ footer{
 }
 .copyright-text{
   color: $colorTextFocus;
+}
+
+.circle-link{
+  width: 60px;
+  height: 60px;
+  background-color: $colorBreand ;
+  border-radius: 50%;
+  right: 20px;
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
 }
 </style>
