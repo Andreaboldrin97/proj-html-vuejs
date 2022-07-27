@@ -1,12 +1,12 @@
 <template>
-  <div class="card-form">
-      <i class="fa-brands fa-font-awesome py-3"></i>
+  <div class="card-form p-4">
+      <i class="py-3" :class="icon"></i>
      <div class="card-text">
          <div class="title-card">
-             Idea Discussion
+             {{ title }}
          </div>
          <div class="card-content pt-3">
-             Get teamed up with the specialists who work and teach coding foe years at famous universities
+             {{ content }}
          </div>
      </div>
   </div>
@@ -14,7 +14,11 @@
 
 <script>
 export default {
-
+    props : {
+        icon : String,
+        title : String,
+        content : String
+    }
 }
 </script>
 
