@@ -18,7 +18,7 @@
           <sectionBlog/>
       </section>
 
-      <section>
+      <section class="pleasantries">
           <pleasantriesSection/>
       </section>
   </main>
@@ -58,5 +58,9 @@ export default {
 .blog{
     margin-top: 70px ;
     background-color: $bgSectionPrice;
+}
+.pleasantries{
+   background: rgb(236,236,238);
+    background: linear-gradient(0deg, rgb(219, 218, 218) 0%, rgba(255,255,255,1) 43%);
 }
 </style>

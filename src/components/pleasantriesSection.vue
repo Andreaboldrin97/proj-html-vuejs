@@ -1,6 +1,6 @@
 
  <template>
-    <div class="container py-5">
+    <div class="container pt-5">
         <div class="text-center">
             <div class="text-focus pb-3">
                 WANNA TRANSFORM YOUR LIFE ?
@@ -14,6 +14,9 @@
                                 :icon="element.icon"
                                 :title="element.title"
                                 :content="element.content"/>
+        </div>
+        <div class="hero-img position-relative">
+            <img src="../assets/remote-training/images/home-6-services-image-1024x411.png" alt="">
         </div>
     </div>
 </template>
@@ -66,6 +69,13 @@ export default {
     .blog-focus{
         color: $colorBreand;
         font-weight: 200;
+    }
+}
+.hero-img{
+    top: 35px;
+    img{
+        width: 100%;
+        object-fit: cover;
     }
 }
 
