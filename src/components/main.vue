@@ -59,11 +59,11 @@ export default {
 }
 .price {
     margin-top: 150px ;
-    background-color: $bgSectionPrice;
+    background-color: $bgSectionligth ;
 }
 .blog{
     margin-top: 70px ;
-    background-color: $bgSectionPrice;
+    background-color: $bgSectionligth ;
 }
 .pleasantries{
    background: rgb(236,236,238);
