@@ -1,7 +1,7 @@
 <template>
   <footer >
     <div class="container"> 
-      <div class="d-flex pt-5">
+      <div class="d-flex pt-5 ps-5">
           <div class="w-50">
 
             <div class="title py-2">
@@ -28,7 +28,7 @@
           </div>
           
           <div class="w-50">
-
+            <informationSection/>
           </div>
       </div>
       <div class="text-center py-5 copyright-text">
@@ -40,10 +40,12 @@
 
 <script>
 import socialSection from './socialSection.vue' 
+import informationSection from './informationSection.vue' 
 
 export default {
   components : {
     socialSection,
+    informationSection
   },
   data : function(){
     return{
