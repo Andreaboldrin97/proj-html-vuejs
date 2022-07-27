@@ -11,8 +11,8 @@
              <i class="fa-solid fa-check pe-3"></i> {{ element }}
         </div>
          <btnForm class="pt-4"
-            :btnFocus ="btnText.btnFocus"
-            :btnLink="btnText.btnLink"
+            btnFocus ="Get started for free"
+            btnLink="#"
             />
     </div>
 </template>
@@ -32,10 +32,6 @@ export default {
                 'Participate in events to join others',
                 'Get the desired certificate delivered at house'
             ],
-             btnText :{
-                    btnFocus : 'Get started for free',
-                    btnLink : '#'
-            }
         }
     }
 

@@ -3,15 +3,13 @@
   <header class="hero-header">
     <headerNav/>
 
-    <heroHeaderMessage id="header" v-for="(element, index) in focusMessage" :key="index"
-                :focus="element.focus"
-                :textInfo ="element.textInfo "
-               />
+    <heroHeaderMessage id="header"/>
 
       <div class="text-center">
-          <btnForm class=""
-            :btnFocus ="btnText.btnFocus"
-            :btnLink="btnText.btnLink"
+          <btnForm
+            btnFocus ="Get started for free"
+            btnLink="#"
+            onHeader= true
             />
       </div>
 
@@ -35,14 +33,7 @@ export default {
     },
      data : function (){
         return{
-            focusMessage : [{
-                focus : 'Learn At Own Pace!',
-                textInfo : 'Get teamed up whith peoople of the same will.',
-            }],
-             btnText :{
-                    btnFocus : 'Get started for free',
-                    btnLink : '#'
-            }
+           
         }
     }
 

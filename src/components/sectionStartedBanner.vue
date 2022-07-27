@@ -9,8 +9,8 @@
 
        <div class="text-center">
           <btnForm class="pt-4"
-            :btnFocus ="btnText.btnFocus"
-            :btnLink="btnText.btnLink"
+            btnFocus ="Get started now"
+            btnLink="#"
             />
       </div>
   </div>
@@ -23,14 +23,7 @@ export default {
         components :{
          btnForm
     },
-    data : function(){
-        return{
-            btnText :{
-                    btnFocus : 'Get started now',
-                    btnLink : '#'
-            }
-        }
-    }
+
 }
 </script>
 

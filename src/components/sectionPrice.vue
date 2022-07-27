@@ -19,8 +19,8 @@
       </div>
       <div class="text-center">
           <btnForm class="pt-5"
-            :btnFocus ="btnText.btnFocus"
-            :btnLink="btnText.btnLink"
+            btnFocus ="View all courses →"
+            btnLink="#"
             />
       </div>
       
@@ -83,11 +83,6 @@ export default {
                     students : 76
                 }
             ],
-            btnText :{
-                    btnFocus : 'View all courses →',
-                    btnLink : '#'
-            }
-            
         }
     }
 }

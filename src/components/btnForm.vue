@@ -1,7 +1,10 @@
 //! creato components btn
 <template>
   <div>
-      <a :href="btnLink" class="btn btn_focus px-5 py-2 hover-main"> {{ btnFocus }}</a>
+    <a :href="btnLink" class="btn btn_focus px-5 py-2"
+                :class="onHeader ? 'hover-header' : 'hover-main' ">
+        {{ btnFocus }}
+    </a>
   </div>
 </template>
 
@@ -12,7 +15,8 @@ export default {
 
 props :{
     btnFocus : String,
-    btnLink : String
+    btnLink : String,
+    onHeader : Boolean
 }
 }
 </script>
