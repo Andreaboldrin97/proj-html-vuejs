@@ -1,3 +1,4 @@
+//! banner slogan in main sezione1
 <template>
   <section class="container fucus-container">
       <div class="pt-5 text-center text-focus-info">

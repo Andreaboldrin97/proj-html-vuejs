@@ -1,3 +1,4 @@
+//! creato components btn
 <template>
   <div>
       <a :href="btnLink" class="btn btn_focus text-white px-4"> {{ btnFocus }}</a>
@@ -6,6 +7,8 @@
 
 <script>
 export default {
+
+//? props di defaul per il passaggio dei dati
 
 props :{
     btnFocus : String,

@@ -1,3 +1,4 @@
+//! card delle professioni che offre il sito ( al cambio di un valore ca,bia la posizione delle img)
 <template>
   <div class="professional-card m-3 my-3 px-2 d-flex flex-column justify-content-between " :class="isReverse  ? 'flex-column-reverse' : '' ">
         <div class="p-2 img-text-card">

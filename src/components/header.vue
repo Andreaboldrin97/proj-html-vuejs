@@ -1,18 +1,23 @@
+//! header diviso in 4 components (nav , messaggio centrale , btn components, heroBanner)
 <template>
   <header class="hero-header">
     <headerNav/>
+
     <heroHeaderMessage v-for="(element, index) in focusMessage" :key="index"
                 :focus="element.focus"
                 :textInfo ="element.textInfo "
                 :btnFocus="element.btnFocus"
                 :btnLink="element.btnLink"/>
+
       <div class="text-center">
           <btnForm class=""
             :btnFocus ="btnText.btnFocus"
             :btnLink="btnText.btnLink"
             />
       </div>
+
     <heroBanner/>
+
   </header>
 </template>
 

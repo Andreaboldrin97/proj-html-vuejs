@@ -1,3 +1,4 @@
+   //! conponents per le compagnie affiliate usato in testimony.vue
 <template>
       <div>
           <img :src="require(`../assets/remote-training/images/${imgCompany}`)" :alt="name">

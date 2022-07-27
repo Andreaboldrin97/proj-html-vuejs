@@ -1,3 +1,4 @@
+//! creazione carta per i corsi disponibili in sectionPrice.vue
 <template>
     <div class="d-flex container-course">
         <div class="img-course me-4">
