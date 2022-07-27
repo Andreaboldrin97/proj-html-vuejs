@@ -21,6 +21,10 @@
       <section class="pleasantries">
           <pleasantriesSection/>
       </section>
+
+      <section>
+          <sectionStartedBanner/>
+      </section>
   </main>
 </template>
 
@@ -32,6 +36,7 @@ import sectionPrice from './sectionPrice.vue'
 import testimony from './testimony.vue' 
 import sectionBlog from './sectionBlog.vue' 
 import pleasantriesSection from './pleasantriesSection.vue' 
+import sectionStartedBanner from './sectionStartedBanner.vue' 
 
 export default {
       components :{
@@ -41,7 +46,8 @@ export default {
          sectionPrice,
          testimony,
          sectionBlog,
-         pleasantriesSection
+         pleasantriesSection,
+         sectionStartedBanner
     },
 }
 </script>

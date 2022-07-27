@@ -1,7 +1,7 @@
 //! creato components btn
 <template>
   <div>
-      <a :href="btnLink" class="btn btn_focus text-white px-4"> {{ btnFocus }}</a>
+      <a :href="btnLink" class="btn btn_focus text-white px-5 py-2"> {{ btnFocus }}</a>
   </div>
 </template>
 
