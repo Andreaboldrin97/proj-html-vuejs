@@ -1,6 +1,6 @@
 //! creazione carta per i corsi disponibili in sectionPrice.vue
 <template>
-    <div class="d-flex container-course">
+    <div class="d-flex container-course p-3">
         <div class="img-course me-4">
           <img :src="require(`../assets/remote-training/images/${imgCourse}`)" alt="img-course">
         </div>
@@ -44,6 +44,10 @@ export default {
 .container-course{
   width: 50%;
   margin: 25px 0;
+  &:hover{
+    background-color: white;
+    border-radius: 10px;
+  }
 }
 .img-course{
   img{
