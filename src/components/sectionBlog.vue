@@ -9,7 +9,7 @@
           </div>
       </div>
 
-      <div class="d-flex">
+      <div class="d-flex pb-5">
           <cardBlog v-for="(element,index) in blogsForm" :key="index"
                     :imgBlog ="element.imgBlog"
                     :blogGenre ="element.blogGenre"

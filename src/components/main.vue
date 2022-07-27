@@ -18,6 +18,9 @@
           <sectionBlog/>
       </section>
 
+      <section>
+          <pleasantriesSection/>
+      </section>
   </main>
 </template>
 
@@ -28,6 +31,7 @@ import professionalSection from './professionalSection.vue'
 import sectionPrice from './sectionPrice.vue' 
 import testimony from './testimony.vue' 
 import sectionBlog from './sectionBlog.vue' 
+import pleasantriesSection from './pleasantriesSection.vue' 
 
 export default {
       components :{
@@ -36,7 +40,8 @@ export default {
          professionalSection,
          sectionPrice,
          testimony,
-         sectionBlog
+         sectionBlog,
+         pleasantriesSection
     },
 }
 </script>
