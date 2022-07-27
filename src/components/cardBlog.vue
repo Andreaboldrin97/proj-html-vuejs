@@ -1,38 +1,46 @@
 <template>
-
     <div class="blog-card">
-        <div>
-            <img class="rounded" src="../assets/remote-training/images/artist-blog-01-480x325.jpg" alt="">
+        <div >
+            <img class="rounded" :src="require(`../assets/remote-training/images/${imgBlog}`)" alt="img-blog"> 
         </div>
         <div class="text-card">
             <div class="genre py-3">
-                ARTIST
+                {{ blogGenre }}
             </div>
             <div class="blog-title pb-4">
-                Pocket-Sized Notebooks Hold Miniature Paintings
+                {{ blogContent }}
             </div>
             <div class="d-flex blog-views">
                 <div class="pe-5">
                     <i class="fa-regular fa-calendar pe-2"></i>
-                        May 15,2020
+                        {{ date }}
                 </div>
                 <div>
                     <i class="fa-regular fa-eye"></i>
-                        views
+                      {{ views }}  views
                 </div>
             </div>
         </div>
     </div>
-     
-
 </template>
 
 <script>
+export default {
+    props : {
+            imgBlog : String,
+            blogGenre : String,
+            blogContent : String,
+            date : [Number,String],
+            views : [Number,String]
+        }
+}
+
 
 </script>
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
+
 .blog-card {
     width: calc((100vw / 3) - 30px);
     margin: 15px;
