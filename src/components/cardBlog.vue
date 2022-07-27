@@ -54,8 +54,8 @@ export default {
         font-weight: 400;
     }
     .blog-title{
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 22px;
+        font-weight: 600;
     }
     .blog-views{
         color: $colorTextFocus;
