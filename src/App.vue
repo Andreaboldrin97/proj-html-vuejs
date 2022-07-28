@@ -23,4 +23,8 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
+
+#app{
+  font-family: 'Lato', sans-serif;
+}
 </style>
