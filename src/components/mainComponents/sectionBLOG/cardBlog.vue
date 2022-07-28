@@ -42,6 +42,7 @@ export default {
 @import "./src/style/variables.scss";
 
 .blog-card {
+    cursor: pointer;
     width: calc((100vw / 3) - 30px);
     margin: 15px;
     img{

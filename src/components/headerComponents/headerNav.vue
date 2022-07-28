@@ -77,6 +77,7 @@ export default {
     color: white;
 }
 .nav-links{
+    cursor: pointer;
     i{
         font-size: 12px;
         vertical-align: middle;
@@ -94,6 +95,7 @@ export default {
 }
 .icon-user{
     font-size: 20px;
+    cursor: pointer;
 
     .shopping-items{
     width: 15px;

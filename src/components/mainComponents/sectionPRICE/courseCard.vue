@@ -44,6 +44,7 @@ export default {
 .container-course{
   width: 50%;
   margin: 25px 0;
+  cursor: pointer;
   &:hover{
     background-color: white;
     border-radius: 10px;
