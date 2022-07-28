@@ -40,6 +40,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './src/style/variables.scss';
+
 .statisc-container{
     margin-top: 100px;
     .statisc-number{

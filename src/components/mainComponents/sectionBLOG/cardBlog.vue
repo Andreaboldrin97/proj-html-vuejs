@@ -1,7 +1,7 @@
 <template>
     <div class="blog-card">
         <div >
-            <img class="rounded" :src="require(`../assets/remote-training/images/${imgBlog}`)" alt="img-blog"> 
+            <img class="rounded" :src="require(`@/assets/remote-training/images/${imgBlog}`)" alt="img-blog"> 
         </div>
         <div class="text-card">
             <div class="genre py-3">
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/variables.scss";
+@import "./src/style/variables.scss";
 
 .blog-card {
     width: calc((100vw / 3) - 30px);

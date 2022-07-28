@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import headerNav from './headerNav.vue' 
-import heroHeaderMessage from './heroHeaderMessage.vue' 
-import heroBanner from './heroBanner.vue' 
+import headerNav from './headerComponents/headerNav.vue' 
+import heroHeaderMessage from './headerComponents/heroHeaderMessage.vue' 
+import heroBanner from './headerComponents/heroBanner.vue' 
 import btnForm from './btnForm.vue' 
 
 export default {

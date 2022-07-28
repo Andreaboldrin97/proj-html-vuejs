@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/variables.scss";
+@import "./src/style/variables.scss";
 
 .card-form{
     width: calc(100vw / 4);

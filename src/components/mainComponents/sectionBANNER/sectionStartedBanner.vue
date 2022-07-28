@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import btnForm from './btnForm.vue' 
+import btnForm from '../../btnForm.vue' 
 
 export default {
         components :{
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/variables.scss";
+@import "./src/style/variables.scss";
 
 .banner-content{
     margin-top: 150px;

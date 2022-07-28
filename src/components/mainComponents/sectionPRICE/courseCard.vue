@@ -2,7 +2,7 @@
 <template>
     <div class="d-flex container-course p-3">
         <div class="img-course me-4">
-          <img :src="require(`../assets/remote-training/images/${imgCourse}`)" alt="img-course">
+          <img :src="require(`@/assets/remote-training/images/${imgCourse}`)" alt="img-course">
         </div>
         <div class="align-self-center">
               <div class="pb-2 price-course">
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/variables.scss";
+@import "./src/style/variables.scss";
 
 .container-course{
   width: 50%;

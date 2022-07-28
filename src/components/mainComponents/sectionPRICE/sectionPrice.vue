@@ -30,7 +30,7 @@
 
 <script>
 import courseCard from './courseCard.vue' 
-import btnForm from './btnForm.vue' 
+import btnForm from '../../btnForm.vue' 
 
 export default {
           components :{
@@ -89,7 +89,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/variables.scss";
+@import "./src/style/variables.scss";
+
 .container-card{
     width: 80%;
     margin: 0 auto;

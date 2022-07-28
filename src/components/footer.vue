@@ -43,8 +43,8 @@
 </template>
 
 <script>
-import socialSection from './socialSection.vue' 
-import informationSection from './informationSection.vue' 
+import socialSection from './footerComponents/socialSection.vue' 
+import informationSection from './footerComponents/informationSection.vue' 
 
 export default {
   components : {

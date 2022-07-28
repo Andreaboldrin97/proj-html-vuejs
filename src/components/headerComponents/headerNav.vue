@@ -1,7 +1,7 @@
 <template>
    <nav class="container m-auto p-2 d-flex">
             <div class="logo-img pe-5 align-items-center d-flex">
-                <img src="../assets/remote-training/images/light-logo.png" alt="logo-img">
+                <img src="@/assets/remote-training/images/light-logo.png" alt="logo-img">
             </div>
             <div class="container-nav d-flex justify-content-evenly align-items-center">
                 <div class="nav-links" v-for="(element , index) in linksNav" :key="index">
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/variables.scss";
+@import "./src/style/variables.scss";
 
 .logo-img{
     width: 20%;

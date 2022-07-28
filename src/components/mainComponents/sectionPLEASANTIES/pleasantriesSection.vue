@@ -16,7 +16,7 @@
                                 :content="element.content"/>
         </div>
         <div class="hero-img position-relative">
-            <img src="../assets/remote-training/images/home-6-services-image-1024x411.png" alt="">
+            <img src="@/assets/remote-training/images/home-6-services-image-1024x411.png" alt="">
         </div>
     </div>
 </template>
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/variables.scss";
+@import "./src/style/variables.scss";
 
 .text-focus{
     font-weight: 200;

@@ -3,8 +3,8 @@
     <div class="d-flex container-testimony position-relative">
             <div class="img-testimony me-4">
                 <span class="bg-testimony position-relative"></span> 
-                <img class="testimony-profile position-relative" :src="require(`../assets/remote-training/images/testimonial-avata-02.jpg`)" alt="img-testimony">
-                <img class="position-relative img-background" src="../assets/remote-training/images/maxcoach-shape-05-150x150.png" alt="">
+                <img class="testimony-profile position-relative" :src="require(`@/assets/remote-training/images/testimonial-avata-02.jpg`)" alt="img-testimony">
+                <img class="position-relative img-background" src="src/assets/remote-training/images/maxcoach-shape-05-150x150.png" alt="">
             </div>
             <div class="align-self-center ps-5">
                 <div class="pb-2 review-text">
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/variables.scss";
+@import "./src/style/variables.scss";
 
 
 .bg-testimony{

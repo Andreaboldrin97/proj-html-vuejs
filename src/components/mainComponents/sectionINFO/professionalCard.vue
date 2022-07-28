@@ -8,7 +8,7 @@
                 </div>
         </div>
         <div class="img-card">
-           <img :src="require(`../assets/remote-training/images/${img}`)" :alt="profession">
+           <img :src="require(`@/assets/remote-training/images/${img}`)" :alt="profession">
         </div>
     </div>
 </template>

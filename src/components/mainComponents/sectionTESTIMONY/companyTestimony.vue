@@ -1,7 +1,7 @@
    //! conponents per le compagnie affiliate usato in testimony.vue
 <template>
       <div class="container-company">
-          <img :src="require(`../assets/remote-training/images/${imgCompany}`)" :alt="name">
+          <img :src="require(`@/assets/remote-training/images/${imgCompany}`)" :alt="name">
       </div>
 </template>
 

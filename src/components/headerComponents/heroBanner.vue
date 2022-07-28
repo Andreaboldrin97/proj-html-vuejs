@@ -1,16 +1,16 @@
 <template>
   <div class="container d-flex  position-relative banner-container ">
       <div class="d-flex align-items-end position-relative hero-left">
-          <img src="../assets/remote-training/images/home-6-hero-left-person.png" alt="">
+          <img src="@/assets/remote-training/images/home-6-hero-left-person.png" alt="">
       </div>
       <div class="position-relative hero-center mb-4">
-            <img src="../assets/remote-training/images/home-6-hero-poster-final.jpg" alt="">
+            <img src="@/assets/remote-training/images/home-6-hero-poster-final.jpg" alt="">
             <div class="position-absolute top-50 start-50 img-play">
-                <img src="../assets/remote-training/images/icon-youtube-play.png" alt="">
+                <img src="src/assets/remote-training/images/icon-youtube-play.png" alt="">
             </div>
       </div>
       <div class="d-flex align-items-end position-relative hero-right">
-           <img src="../assets/remote-training/images/home-6-hero-right-person-195x300.png" alt="">
+           <img src="@/assets/remote-training/images/home-6-hero-right-person-195x300.png" alt="">
       </div>
   </div>
 </template>
