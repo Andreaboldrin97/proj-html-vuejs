@@ -6,7 +6,7 @@
       <div class="position-relative hero-center mb-4">
             <img src="@/assets/remote-training/images/home-6-hero-poster-final.jpg" alt="">
             <div class="position-absolute top-50 start-50 img-play">
-                <img src="src/assets/remote-training/images/icon-youtube-play.png" alt="">
+                <img src="@/assets/remote-training/images/icon-youtube-play.png" alt="">
             </div>
       </div>
       <div class="d-flex align-items-end position-relative hero-right">
